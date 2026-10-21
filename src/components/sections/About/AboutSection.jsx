@@ -2,6 +2,9 @@ import React from "react";
 import heroImg from "../../../assets/images/climate-hangout.jpg"; // 👈 change to the exact image you want
 import About2 from "./About-2.jsx";
 import About3 from "./About-3.jsx";
+import OrganisationDetails from "../../ui/OrganisationDetails.jsx";
+import SocialLinks from "../../ui/SocialLinks.jsx";
+import { organisation } from "../../../data/organisation.js";
 
 function AboutSection() {
   return (
@@ -38,6 +41,13 @@ function AboutSection() {
           </p>
         </div>
       </div>
+      <section className="section-shell organisation-section" aria-labelledby="organisation-heading">
+        <p className="eyebrow">OUR ORGANISATION</p>
+        <h2 id="organisation-heading">Climate Alaramma Sustainable Development Initiative</h2>
+        <OrganisationDetails />
+        <a className="text-link" href={`mailto:${organisation.email}`}>{organisation.email}</a>
+        <SocialLinks />
+      </section>
       <About2 />
       <About3 />
     </section>

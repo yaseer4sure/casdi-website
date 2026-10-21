@@ -36,7 +36,7 @@ const teamMembers = [
     role: "Admin. And Operations",
     bio: "Oversees operations, logistics, and vendor coordination to keep projects on schedule, compliant, and well supported.",
     img: portrait4,
-    linkedin: "https://www.linkedin.com",
+    linkedin: null,
   },
   {
     name: "Rofiat Abubakar",
@@ -50,28 +50,28 @@ const teamMembers = [
     role: "Program Officer",
     bio: "Supports program design and delivery, coordinating activities with communities and partners to ensure quality execution.",
     img: portrait6,
-    linkedin: "https://www.linkedin.com",
+    linkedin: null,
   },
   {
     name: "[placeholder name]",
     role: "Program Assistant",
     bio: "Assists with field logistics, documentation, and reporting to keep projects running smoothly day to day.",
     img: portrait4,
-    linkedin: "https://www.linkedin.com",
+    linkedin: null,
   },
   {
     name: "[placeholder name]",
     role: "Gender and Social Protection Officer",
     bio: "Champions gender equity and safeguarding, integrating inclusive practices and protections across all programs.",
     img: portrait5,
-    linkedin: "https://www.linkedin.com",
+    linkedin: null,
   },
   {
     name: "[placeholder name]",
     role: "Community Engagement Officer",
     bio: "Builds relationships with communities and stakeholders, gathering feedback and mobilizing participation for sustained impact.",
     img: portrait6,
-    linkedin: "https://www.linkedin.com",
+    linkedin: null,
   },
 ];
 

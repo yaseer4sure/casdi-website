@@ -34,7 +34,7 @@ No environment variables are required by the current website. Do not commit `.en
 
 ## Contact form
 
-The contact form prepares a message in the visitor's email application; it does not send through a backend. The current contact address is `info@casdi.org`. Confirm the intended public mailbox before launch; the website domain alone does not configure email delivery.
+The contact form prepares a message in the visitor's email application; it does not send through a backend. The current contact address is `admin@climateasdi.org`. Confirm the intended public mailbox before launch; the website domain alone does not configure email delivery.
 
 ## Deployment references
 

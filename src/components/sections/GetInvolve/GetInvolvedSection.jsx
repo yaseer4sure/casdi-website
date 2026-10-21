@@ -1,4 +1,5 @@
 import React from "react";
+import { organisation } from "../../../data/organisation.js";
 import { useSearchParams } from "react-router-dom";
 import { motion as Motion } from "framer-motion";
 import { Target, HeartHandshake, Award} from "lucide-react";
@@ -90,7 +91,7 @@ function GetInvolvedSection() {
                 {content[activeTab].description}
               </p>
               <a
-                href="mailto:info@casdi.org?subject=Donation%20Inquiry"
+                href={`mailto:${organisation.email}?subject=Donation%20Inquiry`}
                 className="rounded-md bg-emerald-700 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-emerald-800"
               >
                 Donate
@@ -102,7 +103,7 @@ function GetInvolvedSection() {
                 {content[activeTab].description}
               </p>
               <a
-                href="mailto:info@casdi.org?subject=Partnership%20Inquiry"
+                href={`mailto:${organisation.email}?subject=Partnership%20Inquiry`}
                 className="rounded-md bg-emerald-700 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-emerald-800"
               >
                 Get Started
@@ -121,11 +122,10 @@ function GetInvolvedSection() {
             </ul>
           )}
         </div>
-        {activeTab === "mission" && <a className="button button-green mt-8" href="mailto:info@casdi.org?subject=Volunteering%20with%20CASDI">Ask about volunteering</a>}
+        {activeTab === "mission" && <a className="button button-green mt-8" href={`mailto:${organisation.email}?subject=Volunteering%20with%20CASDI`}>Ask about volunteering</a>}
       </Motion.div>
     </section>
   );
 }
 
 export default GetInvolvedSection;
-
