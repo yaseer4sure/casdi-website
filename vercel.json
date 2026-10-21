@@ -4,6 +4,16 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "rewrites": [
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/about-history", "destination": "/about-history.html" },
+    { "source": "/work", "destination": "/work.html" },
+    { "source": "/work-programs", "destination": "/work-programs.html" },
+    { "source": "/work-projects", "destination": "/work-projects.html" },
+    { "source": "/work-research", "destination": "/work-research.html" },
+    { "source": "/projects", "destination": "/projects.html" },
+    { "source": "/get-involved", "destination": "/get-involved.html" },
+    { "source": "/resources", "destination": "/resources.html" },
+    { "source": "/contact", "destination": "/contact.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

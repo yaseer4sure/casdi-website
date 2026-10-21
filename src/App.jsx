@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate, Link, useLocation } from "react-router-dom";
+import Seo from "./components/Seo.jsx";
 import Navbar from "./components/layout/Navbar.jsx";
 import Footer from "./components/layout/Footer.jsx";
 import HomeSection from "./components/sections/Home/HomeSection.jsx";
@@ -16,7 +17,7 @@ import ContactSection from "./components/sections/ContactSection.jsx";
 function AppContent() {
   const { pathname } = useLocation();
   useEffect(() => { window.scrollTo(0, 0); document.getElementById("main-content")?.focus({ preventScroll: true }); }, [pathname]);
-  return <div className="site-app"><Navbar /><main id="main-content" tabIndex={-1}><Routes>
+  return <div className="site-app"><Seo /><Navbar /><main id="main-content" tabIndex={-1}><Routes>
     <Route path="/" element={<HomeSection />} /><Route path="/about" element={<AboutSection />} />
     <Route path="/about-history" element={<Approach />} /><Route path="/work" element={<WorkSection />} />
     <Route path="/work-programs" element={<OurWorks />} /><Route path="/work-projects" element={<Impacts />} />

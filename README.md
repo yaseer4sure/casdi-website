@@ -18,6 +18,14 @@ npm run preview
 
 Vite writes the production website to `dist/`. Dependencies and build output are excluded from Git.
 
+## Search visibility and metadata
+
+`src/seo/metadata.js` defines page titles, descriptions, canonical URLs, Open Graph and X cards, and structured organisation and website data identifying CASDI as the organisation's abbreviation. `src/components/Seo.jsx` keeps this information current during client navigation.
+
+After Vite builds, `scripts/build-seo.mjs` writes each main page's metadata directly into its HTML, generates `sitemap.xml` and `robots.txt`, and copies the public social preview image and organisation logo. The page rewrites in `vercel.json` serve these HTML files at their existing URLs. Run the complete `npm run build` command when deploying, rather than running Vite alone. When adding a route, update both the metadata list and Vercel's page rewrites.
+
+After deployment, verify `climateasdi.org` in Google Search Console, submit `https://climateasdi.org/sitemap.xml`, and use URL Inspection to request indexing of the homepage and key pages. Verification requires access to the domain's DNS or another supported verification method; no verification token is committed. Metadata helps search engines understand the website but does not guarantee indexing or ranking for CASDI.
+
 ## Deploy with GitHub and Vercel
 
 1. Push this repository to the intended GitHub account or organisation.
